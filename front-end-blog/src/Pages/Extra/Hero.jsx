@@ -2,135 +2,69 @@ import React from "react";
 import Poster_one from '../../assets/posters/Poster_one.jpg'
 import Poster_two from "../../assets/posters/Poster_two.jpg"
 import Poster_three from "../../assets/posters/Poster_three.jpg"
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+
 
 export const Hero = () => {
     return (
         <>
             <div className="flex flex-col items-center space-y-6 p-6">
                 
-            <div className="max-w-2xl bg-white rounded-lg shadow-sm dark:bg-gray-800">
-                <a href="#" className="block relative">
-                    <img
-                    src={Poster_one}
-                    alt="Poster"
-                    className="w-[700px] h-[300px] object-cover transition-transform duration-300 ease-in-out hover:scale-105 rounded-t-lg z-10 relative"
-                    />
-                </a>
-                <div className="p-5">
-                    <a href="#">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        Noteworthy technology acquisitions 2021
-                    </h5>
-                    </a>
-                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                    Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-                    </p>
-                    <a
-                    href="#"
-                    className="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                    >
-                    Read more
-                    <svg
-                        className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 14 10"
-                    >
-                        <path
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M1 5h12m0 0L9 1m4 4L9 9"
+                <div className="max-w-2xl bg-white rounded-lg dark:bg-gray-800">
+                    <Link to="/blog/1" className="block relative">
+                        <img
+                        src={Poster_one}
+                        alt="Poster"
+                        className="w-[700px] h-[300px] object-cover transition-transform duration-300 ease-in-out hover:scale-105 rounded-lg z-5 relative"
                         />
-                    </svg>
-                    </a>
-                </div>
-            </div>
-            <div className="max-w-2xl bg-white rounded-lg shadow-sm dark:bg-gray-800">
-                <a href="#" className="block relative">
-                    <img
-                    src={Poster_two}
-                    alt="Poster"
-                    className="w-[700px] h-[300px] object-cover transition-transform duration-300 ease-in-out hover:scale-105 rounded-t-lg z-10 relative"
-                    />
-                </a>
-                <div className="p-5">
-                    <a href="#">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        Noteworthy technology acquisitions 2021
-                    </h5>
-                    </a>
-                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                    Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-                    </p>
-                    <a
-                    href="#"
-                    className="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                    >
-                    Read more
-                    <svg
-                        className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 14 10"
-                    >
-                        <path
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M1 5h12m0 0L9 1m4 4L9 9"
-                        />
-                    </svg>
-                    </a>
-                </div>
-            </div>
-            <div className="max-w-2xl bg-white rounded-lg shadow-sm dark:bg-gray-800">
-                <a href="#" className="block relative">
-                    <img
-                    src={Poster_three}
-                    alt="Poster"
-                    className="w-[700px] h-[300px] object-cover transition-transform duration-300 ease-in-out hover:scale-105 rounded-t-lg z-10 relative"
-                    />
-                </a>
-                <div className="p-5">
-                    <a href="#">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        Noteworthy technology acquisitions 2021
-                    </h5>
-                    </a>
-                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                    Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-                    </p>
-                    <a
-                    href="#"
-                    className="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                    >
-                    Read more
-                    <svg
-                        className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 14 10"
-                    >
-                        <path
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M1 5h12m0 0L9 1m4 4L9 9"
-                        />
-                    </svg>
-                    </a>
-                </div>
-            </div>
+                    </Link>
+                    <div className="p-2 mt-4">
+                        <Link to="/blog/1">
+                            <h5 className="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">
+                            Exploring the World's Natural Wonders: A Nature Lover's Journey
+                            </h5>
+                        </Link>
+                        <div className="flex mt-3 mb-3 items-center space-x-2 text-xs text-gray-600">
+                            <img
+                                src="https://thumbs.dreamstime.com/b/cheerful-d-boy-backpack-his-back-leaves-school-jumps-across-water-to-avtar-schoolboy-329290630.jpg"
+                                alt="Author"
+                                className="w-7 h-7 border rounded-full object-cover"
+                            />
+                            <span>
+                                by{" "}
+                                <span className="text-green-600 font-medium hover:underline cursor-pointer">
+                                John Doe
+                                </span>{" "}
+                                on May 30, 2023
+                            </span>
+                        </div>
+                        <p className="mb-3 text-xs font-normal text-gray-500 dark:text-gray-400">
+                        As someone who loves nature, there's nothing quite like the thrill of exploring the world's most beautiful landscapes. From snow-capped mountains to crystal-clear waters, there's no shortage of natural wonders to discover. So pack your bags, grab your hiking boots, and let's take a journey around the globe to explore some of the most breathtaking natural sights on earth.
+                        </p>
+                        <div className="flex items-center justify-between w-full mt-4">
+                            {/* Read article */}
+                            <Link
+                                to="/blog/1"
+                                className="inline-flex items-center text-green-600 text-xs cursor-pointer"
+                            >
+                                Read article <ArrowRight className="w-4 h-4 ml-1" />
+                            </Link>
 
+                            {/* Tags */}
+                            <div className="flex space-x-2 ">
+                                <span className="px-2 py-1 text-xs text-green-600 border border-gray-100 rounded-full hover:border-gray-400">
+                                ENVIRONMENT
+                                </span>
+                                <span className="px-4 py-1 text-xs text-green-600 border border-gray-100 rounded-full hover:border-gray-400">
+                                CLIMATE
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-
+               
                 
             </div>
 

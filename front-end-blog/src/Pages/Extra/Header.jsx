@@ -20,10 +20,10 @@ export const Header = () => {
           : "bg-white dark:bg-gray-900"
       }`}
     >
-      <div className="max-w-screen-xl flex flex-row items-center justify-center text-center mx-auto p-4">
+      <div className="max-w-screen-2xl flex flex-row items-center justify-center text-center mx-auto p-4">
         <a
           href="https://flowbite.com/"
-          className="flex items-center space-x-3 rtl:space-x-reverse"
+          className="flex items-center mr-6 space-x-3 rtl:space-x-reverse"
         >
           <img
             src="https://flowbite.com/docs/images/logo.svg"
